@@ -60,6 +60,3 @@ control(trans([X|L],Y),String) :- member(X,[X|L]), string_concat(X,' -> ',String
 control(trans(X,Y),String) :- string_concat(X,' -> ',String1),
                              string_concat(String1,Y,String2),
                              string_concat(String2,';\n',String).
-
-                             
-
